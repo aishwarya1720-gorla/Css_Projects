@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-image: url(https://www.smorescience.com/wp-content/uploads/2023/10/Untitled-design-2-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.earth{
+    display:flex;
+    justify-content: center;
+   padding-top:150px;
+   position: relative;
+}
+.earthimg{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    animation: rotate 30s infinite linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.moon{
+   position:absolute;
+    right:34.5vw;
+    bottom:6vw;
+   height: 400px;
+   width: 400px;
+   border: 2px dashed rgba(255, 255, 255, 0.523);
+   border-radius: 50%;
+   animation: orbit 5s infinite linear;
+}
+.moonimg{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    animation:rotate 30s infinite linear;
+   
+}
+@keyframes orbit {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+  }
+  
